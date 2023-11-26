@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Adoção</title>
+    <!-- Adicione os links para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/css/adocao.css">
+</head>
+<body>
+    <!-- Inclua o cabeçalho comum a todas as páginas -->
+    <!--<header th:replace="fragments/header :: common-header"></header>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info nav-topo">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand text-light" href="#">
+                    <div id="topo-texto" class="text-center">Petopia</div>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/adocao">Adoção</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/ongs">Ongs parceiras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/canis">Canis parceiros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Compras</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="/login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h2>Cadastro de Adoção</h2>
+        <p>Preencha o cadastro de adoção abaixo:</p>
+
+        <!-- Formulário de cadastro de adoção -->
+        <form>
+            <div class="mb-3">
+                <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome completo">
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+            </div>
+            <div class="mb-3">
+                <label for="idade" class="form-label">Idade</label>
+                <input type="text" class="form-control" id="idade" placeholder="Digite sua idade">
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone (Celular)</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <!-- Botões para voltar e cadastrar -->
+            <a type="button" class="btn btn-secondary" href="/">Voltar</a>
+            <button type="submit" id="btn" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+        <ul id="listaAdocoes" class="list-group mt-4">
+            <!-- Os itens da lista serão adicionados dinamicamente pelo JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Adicione os scripts do Bootstrap e do jQuery no final do corpo -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/adocao.js"></script>
+</body>
+</html>

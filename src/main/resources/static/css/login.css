@@ -1,0 +1,19 @@
+.login-text-center{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 2rem;
+}
+.logoLogin{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 6rem;
+    height: 6rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    color: white;
+}

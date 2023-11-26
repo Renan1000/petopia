@@ -1,0 +1,26 @@
+.nav-topo .navbar-nav li {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-topo .navbar-nav li a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-topo #topo-texto {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+.nav-topo {
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+}
+#topo-texto {
+    color: black;
+    font-size: 24px; /* Tamanho da fonte ajustado */
+    font-weight: bold; /* Peso da fonte (negrito) */
+}

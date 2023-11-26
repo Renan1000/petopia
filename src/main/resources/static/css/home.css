@@ -1,0 +1,58 @@
+.nav-topo {
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#topo-texto {
+    color: black;
+    font-size: 24px; /* Tamanho da fonte ajustado */
+    font-weight: bold; /* Peso da fonte (negrito) */
+}
+
+#corpo-texto {
+    position: relative;
+    background-color: #cce5ff; /* Azul claro da escala existente na página */
+    color: black;
+    padding: 15px;
+    border-radius: 20px; /* Adiciona bordas arredondadas para criar o efeito de nuvem */
+    border: 3px solid black; /* Adiciona bordas pretas de 3px */
+    margin-top: 20px;
+}
+.nav-topo .navbar-nav li {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-topo .navbar-nav li a {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-topo #topo-texto {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-6 {
+    width: 50%;
+    margin-top: 20px; /* Adiciona espaço vertical entre os botões */
+    margin-bottom: 20px; /* Adiciona espaço vertical na base dos botões */
+}
+
+.corpo-texto {
+    width: 100%;
+}
